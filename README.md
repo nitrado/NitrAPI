@@ -1,6 +1,6 @@
 # NITRAPI Documentation
 
-**Note:** The API is currently in a closed beta test. There are no applications available at this time.
+**Note:** The NITRAPI is currently in a closed beta test. There are no applications available at this time.
 
 The documentation can be found under [http://nitrado.github.io/Nitrapi/](http://nitrado.github.io/Nitrapi/)
 
