@@ -1,5 +1,10 @@
 # NITRAPI Changelogs
 
+###Changes from 4th of March 2016
+
+* **Voiceserver**
+	* *Added Voiceserver Support for the Nitrapi. Please take a look into the [documentation](http://nitrado.github.io/Nitrapi/resources/voiceservers/global/).*
+
 ###Changes from 26th of August 2015
 
 * **User Avatar**
