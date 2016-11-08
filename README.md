@@ -8,7 +8,7 @@ All Changelogs can be found [here](https://github.com/nitrado/Nitrapi/blob/maste
 
 ## Software Development Kits
 
-### Official SDK's
+### Official SDKs
 
 This are our official and maintaned Software Development Kits.
 
@@ -16,9 +16,9 @@ This are our official and maintaned Software Development Kits.
 * Java SDK (https://github.com/nitrado/Nitrapi-Java)
 * Swift SDK (https://github.com/nitrado/Nitrapi-Swift)
 
-### 3rd Party SDK's
+### 3rd Party SDKs
 
-No 3rd Party SDK's available yet. Feel free to create one. :)
+No 3rd Party SDKs available yet. Feel free to create one. :)
 
 ## Contributing
 
