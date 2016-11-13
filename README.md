@@ -18,7 +18,9 @@ This are our official and maintaned Software Development Kits.
 
 ### 3rd Party SDKs
 
-No 3rd Party SDKs available yet. Feel free to create one. :)
+* Node.js SDK (https://github.com/codingnavi/Nitrapi-Node)
+
+Feel free to create more. :)
 
 ## Contributing
 
