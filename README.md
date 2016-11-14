@@ -10,7 +10,7 @@ All Changelogs can be found [here](https://github.com/nitrado/Nitrapi/blob/maste
 
 ### Official SDKs
 
-This are our official and maintaned Software Development Kits.
+These are our official and maintained Software Development Kits.
 
 * PHP SDK (https://github.com/nitrado/Nitrapi-PHP)
 * Java SDK (https://github.com/nitrado/Nitrapi-Java)
@@ -18,7 +18,9 @@ This are our official and maintaned Software Development Kits.
 
 ### 3rd Party SDKs
 
-No 3rd Party SDKs available yet. Feel free to create one. :)
+* Node.js SDK (https://github.com/codingnavi/Nitrapi-Node)
+
+Feel free to create more. :)
 
 ## Contributing
 
@@ -26,4 +28,4 @@ If you like to contribute, just raise a Github Pull Request.
 
 ## Bug Reports
 
-If you really found a bug please let us know [here](https://github.com/nitrado/Nitrapi/issues). But mostly it's more like a feature then a bug. ;-)
+If you really found a bug, please let us know [here](https://github.com/nitrado/Nitrapi/issues). But it's probably more like a feature then a bug. ;-)
