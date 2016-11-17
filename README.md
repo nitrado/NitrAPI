@@ -1,7 +1,5 @@
 # NITRAPI Documentation
 
-**Note:** The Nitrapi will be public soon. Currently it's still in a closed beta test. Get ready.
-
 The documentation can be found under [https://nitrado.github.io/Nitrapi/](http://nitrado.github.io/Nitrapi/).
 
 All Changelogs can be found [here](https://github.com/nitrado/Nitrapi/blob/master/CHANGELOG.md).
