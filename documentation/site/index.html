@@ -384,9 +384,9 @@ If you found a bug please let us know <a href="https://github.com/nitrado/Nitrap
 <p>After you have successfully registered a new application you will receive a APP ID and a APP secret, this tokens are needed for requesting the API via oAuth2.</p>
 <p>API Endpoint: <strong>https://api.nitrado.net</strong></p>
 <h2 id="rate-limits">Rate Limits</h2>
-<p>The API has a rate limit of 500 requests per hour for each user. You can see the amount of remaining requests in the header response. </p>
-<p>Example headers from HTTP response with 450/500 requests left:</p>
-<pre><code>X-RateLimit-Limit: 500
+<p>The API has a rate limit of 10000 requests per hour for each user. You can see the amount of remaining requests in the header response. </p>
+<p>Example headers from HTTP response with 450/10000 requests left:</p>
+<pre><code>X-RateLimit-Limit: 10000
 X-RateLimit-Remaining: 450
 X-RateLimit-Reset: 1426202077
 </code></pre>
