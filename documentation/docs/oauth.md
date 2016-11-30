@@ -16,7 +16,8 @@ This is the token endpoint for requesting a refresh token.
 
 ## Access tokens
 
-We do not expire access tokens. The access token will be invalid if a user explicitly rejects your application from the Nitrado website.
+Each access token expires after 30 days.
+The access token will be also invalid if the user explicitly rejects your application from the Nitrado website.
 You can pass the access token as GET/POST parameter or in the header as 'Authorization: Bearer XXXXXXXXXXXX'.
 
 ## Scopes
