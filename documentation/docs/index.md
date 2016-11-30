@@ -13,11 +13,11 @@ API Endpoint: **https://api.nitrado.net**
 
 ## Rate Limits
 
-The API has a rate limit of 500 requests per hour for each user. You can see the amount of remaining requests in the header response. 
+The API has a rate limit of 10.000 requests per hour for each user. You can see the amount of remaining requests in the header response. 
 
-Example headers from HTTP response with 450/500 requests left:
+Example headers from HTTP response with 450/10.000 requests left:
 ```
-X-RateLimit-Limit: 500
+X-RateLimit-Limit: 10.000
 X-RateLimit-Remaining: 450
 X-RateLimit-Reset: 1426202077
 ```
