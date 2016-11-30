@@ -123,6 +123,13 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cloud_server/">Cloud Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
           
@@ -205,6 +212,20 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../cloud_servers/global/">Global</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cloud_servers/power_events/">Power Events</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cloud_servers/traffic/">Traffic</a>
         
     </li>
 
@@ -417,7 +438,7 @@ Optionally you can search recursively for a specific file name pattern.</p>
 search=*.cfg (optional)
 </code></pre>
 
-<p>Response:</p>
+<p>Example Response:</p>
 <pre><code class="json">{
    &quot;status&quot;:&quot;success&quot;,
    &quot;data&quot;:{
@@ -463,7 +484,7 @@ search=*.cfg (optional)
 <pre><code>file=/games/ni1_1/ftproot/restart.log
 </code></pre>
 
-<p>Response:</p>
+<p>Example Response:</p>
 <pre><code class="json">{
   &quot;status&quot;: &quot;success&quot;,
   &quot;data&quot;: {
@@ -493,7 +514,7 @@ file=newFile.txt
 - ROLE_WEBINTERFACE_FILEBROWSER_WRITE
 </code></pre>
 
-<p>Response:</p>
+<p>Example Response:</p>
 <pre><code class="json">{
    &quot;status&quot;:&quot;success&quot;,
    &quot;data&quot;:{
@@ -528,7 +549,7 @@ Content-Type: application/binary
 <pre><code>path=/games/ni1_1/ftproot/restart.log
 </code></pre>
 
-<p>Response:</p>
+<p>Example Response:</p>
 <pre><code class="json">{
    &quot;status&quot;:&quot;success&quot;,
    &quot;message&quot;:&quot;File or directory has been deleted&quot;
@@ -553,7 +574,7 @@ target_name=restart-copy.log
 
 </code></pre>
 
-<p>Response:</p>
+<p>Example Response:</p>
 <pre><code class="json">{
    &quot;status&quot;:&quot;success&quot;,
    &quot;message&quot;:&quot;File or directory has been copied&quot;
@@ -582,7 +603,7 @@ target_path=/games/ni1_1/ftproot/minecraft/
 target_filename=old-restart.log (optional, can be only used for files)
 </code></pre>
 
-<p>Response:</p>
+<p>Example Response:</p>
 <pre><code class="json">{
    &quot;status&quot;:&quot;success&quot;,
    &quot;message&quot;:&quot;The directory has been moved&quot;
@@ -605,7 +626,7 @@ target_filename=old-restart.log (optional, can be only used for files)
 name=newDirectory
 </code></pre>
 
-<p>Response:</p>
+<p>Example Response:</p>
 <pre><code class="json">{
    &quot;status&quot;:&quot;success&quot;,
    &quot;message&quot;:&quot;The directory has created&quot;
@@ -626,7 +647,7 @@ name=newDirectory
 <pre><code>path=/games/ni1_1/ftproot/
 </code></pre>
 
-<p>Response:</p>
+<p>Example Response:</p>
 <pre><code class="json">{  
    &quot;status&quot;:&quot;success&quot;,
    &quot;data&quot;:{  

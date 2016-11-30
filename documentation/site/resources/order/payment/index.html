@@ -123,6 +123,13 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cloud_server/">Cloud Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
           
@@ -218,6 +225,20 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../cloud_servers/global/">Global</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cloud_servers/power_events/">Power Events</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cloud_servers/traffic/">Traffic</a>
         
     </li>
 
@@ -391,7 +412,7 @@ All amounts need to be provided in cents. The selected currency depends on the u
 <pre><code>GET /order/payment/payment_methods?access_token=&lt;access_token&gt;
 </code></pre>
 
-<p>Response:</p>
+<p>Example Response:</p>
 <pre><code class="json">{  
    &quot;status&quot;:&quot;success&quot;,
    &quot;data&quot;:{  
@@ -431,7 +452,7 @@ All amounts need to be provided in cents. The selected currency depends on the u
 <pre><code>GET /order/payment/countries?access_token=&lt;access_token&gt;
 </code></pre>
 
-<p>Response:</p>
+<p>Example Response:</p>
 <pre><code>{  
    &quot;status&quot;:&quot;success&quot;,
    &quot;data&quot;:{  
@@ -463,7 +484,7 @@ country=DE (2 digit ISO country code for transaction)
 bank=ABANAL2A [optional] (only if you use gc_ideal as payment method]
 </code></pre>
 
-<p>Response:</p>
+<p>Example Response:</p>
 <pre><code class="json">{  
    &quot;status&quot;:&quot;success&quot;,
    &quot;data&quot;:{  

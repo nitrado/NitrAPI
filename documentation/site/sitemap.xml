@@ -61,6 +61,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>/resources/cloud_server/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
@@ -125,6 +131,18 @@
         
     <url>
      <loc>/resources/cloud_servers/global/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/cloud_servers/power_events/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/cloud_servers/traffic/</loc>
      <lastmod>2016-11-30</lastmod>
      <changefreq>daily</changefreq>
     </url>

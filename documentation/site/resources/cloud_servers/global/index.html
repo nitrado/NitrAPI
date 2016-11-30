@@ -123,6 +123,13 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../cloud_server/">Cloud Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
           
@@ -208,7 +215,39 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#get-cloud_servers">GET /cloud_servers</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-cloud_serverspassword">GET /cloud_servers/password</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-cloud_serversconsole">GET /cloud_servers/console</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-cloud_serversptr">POST /cloud_servers/ptr</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-cloud_servershostname">POST /cloud_servers/hostname</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-cloud_serversreinstall">POST /cloud_servers/reinstall</a></li>
+                
+            
             </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../power_events/">Power Events</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../traffic/">Traffic</a>
         
     </li>
 
@@ -374,7 +413,187 @@
           <div role="main">
             <div class="section">
               
-                
+                <p>This are global commands are for Cloud Servers.</p>
+<h2 id="get-cloud_servers">GET /cloud_servers</h2>
+<p>This command returns all Cloud Server information which are available</p>
+<p>Request:</p>
+<pre><code>GET /services/&lt;id&gt;/cloud_servers?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Example Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;data&quot;:{  
+      &quot;cloud_server&quot;:{  
+         &quot;status&quot;:&quot;running&quot;,
+         &quot;hostname&quot;:&quot;cloud1337.nitrado.cloud&quot;,
+         &quot;hardware&quot;:{  
+            &quot;cpu&quot;:2,
+            &quot;ram&quot;:4,
+            &quot;windows&quot;:1,
+            &quot;ssd&quot;:20,
+            &quot;ipv4&quot;:3,
+            &quot;traffic&quot;:2
+         },
+         &quot;ips&quot;:[  
+            {  
+               &quot;address&quot;:&quot;2a03:4d40:1337:0:f816:xxxx:fe36:xxxx&quot;,
+               &quot;version&quot;:6,
+               &quot;main_ip&quot;:true,
+               &quot;mac&quot;:&quot;fa:18:3e:32:e4:12&quot;,
+               &quot;ptr&quot;:&quot;cloud1337.nitrado.cloud&quot;
+            },
+            {  
+               &quot;address&quot;:&quot;5.83.160.256&quot;,
+               &quot;version&quot;:4,
+               &quot;main_ip&quot;:true,
+               &quot;mac&quot;:&quot;fa:18:3e:32:e4:12&quot;,
+               &quot;ptr&quot;:&quot;cloud1337.nitrado.cloud&quot;
+            }
+         ],
+         &quot;image&quot;:{  
+            &quot;id&quot;:3,
+            &quot;name&quot;:&quot;CentOS 7 (Plain)&quot;
+         },
+         &quot;password_available&quot;:false,
+         &quot;bandwidth_limited&quot;:false
+      }
+   }
+}
+</code></pre>
+
+<p>List of possible status codes:</p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th align="right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>installing</td>
+<td align="right">Will be returned if the server is currently installing.</td>
+</tr>
+<tr>
+<td>reinstalling</td>
+<td align="right">Will be returned if the server is currently reinstalling.</td>
+</tr>
+<tr>
+<td>flavour_change</td>
+<td align="right">Will be returned during server up- and downgrades.</td>
+</tr>
+<tr>
+<td>running</td>
+<td align="right">Will be returned if the server is up and running.</td>
+</tr>
+<tr>
+<td>stopped</td>
+<td align="right">Will be returned if the server is stopped.</td>
+</tr>
+<tr>
+<td>error_fc</td>
+<td align="right">Will be returned if a error while the up- and downgrade occurs.</td>
+</tr>
+<tr>
+<td>error_delete</td>
+<td align="right">Will be returned if a error while deleting the server occurs.</td>
+</tr>
+<tr>
+<td>error_install</td>
+<td align="right">Will be returned if a error while installing the server occurs.</td>
+</tr>
+<tr>
+<td>error_reinstall</td>
+<td align="right">Will be returned if a error while reinstalling the server occurs.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="get-cloud_serverspassword">GET /cloud_servers/password</h2>
+<p>This endpoint returns the installation password. The password will be deleted after calling this endpoint. 
+Please change or save the password. There is no way to recover the lost password.</p>
+<p>Request:</p>
+<pre><code>GET /services/&lt;id&gt;/cloud_servers/password?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Example Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;data&quot;:{  
+      &quot;password&quot;:&quot;MySpecialRootPassword123&quot;
+   }
+}
+</code></pre>
+
+<h2 id="get-cloud_serversconsole">GET /cloud_servers/console</h2>
+<p>Returns the noVNC console URL for Remote Management.</p>
+<p>Request:</p>
+<pre><code>GET /services/&lt;id&gt;/cloud_servers/console?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Example Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;data&quot;:{  
+      &quot;console&quot;:{  
+         &quot;url&quot;:&quot;https://console.nitrado.net:6080/vnc_auto.html?token=5d2b47f2-35b7-XXXX-a38e-XXXXXXXXXX&quot;,
+         &quot;type&quot;:&quot;novnc&quot;
+      }
+   }
+}
+</code></pre>
+
+<h2 id="post-cloud_serversptr">POST /cloud_servers/ptr</h2>
+<p>Changes a PTR record of a specific IPv4 or IPv6 address.</p>
+<p>Request:</p>
+<pre><code>POST /services/&lt;id&gt;/cloud_servers/ptr?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>POST Parameters:</p>
+<pre><code>ptr=nitrado.net (a valid hostname)
+ip=5.83.160.256 (one of your IPv4 or IPv6 addresses)
+</code></pre>
+
+<p>Example Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;message&quot;:&quot;The PTR record from 5.83.160.256 has been changed to \&quot;nitrado.net\&quot;&quot;
+}
+</code></pre>
+
+<h2 id="post-cloud_servershostname">POST /cloud_servers/hostname</h2>
+<p>Changes the hostname of the Cloud Server.</p>
+<p>Request:</p>
+<pre><code>POST /services/&lt;id&gt;/cloud_servers/hostname?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>POST Parameters:</p>
+<pre><code>hostname=server01.nitrado.net (optional, if empty the default hostname will be set again)
+</code></pre>
+
+<p>Example Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;message&quot;:&quot;The hostname has been changed to server01.nitrado.net&quot;
+}
+</code></pre>
+
+<h2 id="post-cloud_serversreinstall">POST /cloud_servers/reinstall</h2>
+<p>Reinstalls the Cloud Server instance. Optional you can provide a new Image ID. Click <a href="../../../resources/cloud_server/#get-informationcloud_serversimages">here</a> for a full images list.</p>
+<p>Request:</p>
+<pre><code>POST /services/&lt;id&gt;/cloud_servers/reinstall?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>POST Parameters:</p>
+<pre><code>image_id=3 (optional, select a specific image ID)
+</code></pre>
+
+<p>Example Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;message&quot;:&quot;Reinstallation has been started&quot;
+}
+</code></pre>
               
             </div>
           </div>
@@ -382,7 +601,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../gameservers/global/" class="btn btn-neutral float-right" title="Global">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../power_events/" class="btn btn-neutral float-right" title="Power Events">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../../order/bouncer/" class="btn btn-neutral" title="Bouncer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -414,7 +633,7 @@
         <span><a href="../../order/bouncer/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../gameservers/global/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../power_events/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
