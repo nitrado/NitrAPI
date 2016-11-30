@@ -124,6 +124,16 @@
     
         
     <url>
+     <loc>/resources/cloud_servers/global/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
      <loc>/resources/gameservers/global/</loc>
      <lastmod>2016-11-30</lastmod>
      <changefreq>daily</changefreq>
