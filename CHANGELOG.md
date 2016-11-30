@@ -1,5 +1,19 @@
 # NITRAPI Changelogs
 
+###Changes from 5th of November 2016
+
+* **Nitrapi SDK's**
+	* *We've added SDK's for Java and Swift. Also we've updated our PHP Library.* Feel free to contribute.
+* **Documentation** 
+	* *We are currently updating our Public Documentation and publishing asap.*
+* **Closed Beta**
+	* *The Nitrapi Closed Beta will end soon. We are planing to release the API for everyone in the next weeks.*
+
+###Changes from 4th of March 2016
+
+* **Voiceserver**
+	* *Added Voiceserver Support for the Nitrapi. Please take a look into the [documentation](http://nitrado.github.io/Nitrapi/resources/voiceservers/global/).*
+
 ###Changes from 26th of August 2015
 
 * **User Avatar**
