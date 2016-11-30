@@ -1,5 +1,15 @@
 # NITRAPI Changelogs
 
+###Changes from the 30th of November 2016
+
+* **Documentation**
+    * *Added Cloud Server Product to Nitrapi Documentation.*
+    * *Small improvements.*
+    * *Token expiring notice added.*
+    * *Added mkdocs files to this master branch, now everyone can help edit the Documentation.*
+* **oAuth - Access Tokens**
+    * *We expire all tokens now after 30 days. You can use oAuth to refresh the tokens.*
+
 ###Changes from 5th of November 2016
 
 * **Nitrapi SDK's**
