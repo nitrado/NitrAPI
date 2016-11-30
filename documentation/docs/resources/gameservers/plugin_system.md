@@ -17,7 +17,7 @@ Permission:
 - ROLE_WEBINTERFACE_SETTINGS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -57,7 +57,7 @@ Permission:
 - ROLE_WEBINTERFACE_SETTINGS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -81,7 +81,7 @@ Permission:
 - ROLE_WEBINTERFACE_SETTINGS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -104,7 +104,7 @@ Permission:
 - ROLE_WEBINTERFACE_SETTINGS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -127,7 +127,7 @@ Permission:
 - ROLE_WEBINTERFACE_SETTINGS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",

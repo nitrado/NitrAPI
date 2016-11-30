@@ -45,7 +45,7 @@ Request:
 GET /order/order/locations?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```
 {  
    "status":"success",

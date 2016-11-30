@@ -9,7 +9,7 @@ Request:
 GET /gameserver/games?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```
 {
     "status": "success",

@@ -11,7 +11,7 @@ Request:
 GET /services/<id>/voiceservers?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -102,7 +102,7 @@ Permission:
 - ROLE_WEBINTERFACE_GENERAL_CONTROL
 ```
 
-Response:
+Example Response:
 ```json
 {
   "status": "success",
@@ -126,7 +126,7 @@ Permission:
 - ROLE_WEBINTERFACE_GENERAL_CONTROL
 ```
 
-Response:
+Example Response:
 ```json
 {
   "status": "success",
@@ -149,7 +149,7 @@ Permission:
 - ROLE_WEBINTERFACE_GENERAL_CONTROL
 ```
 
-Response:
+Example Response:
 ```json
 {
   "status": "success",
@@ -187,7 +187,7 @@ key=<key of the setting>
 value=<value of the setting>
 ```
 
-Response:
+Example Response:
 ```json
 {
   "status": "success",

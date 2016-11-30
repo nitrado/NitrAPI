@@ -20,7 +20,7 @@ POST Parameters:
 world=minecraft/world
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -42,7 +42,7 @@ Permission:
 - ROLE_WEBINTERFACE_BACKUPS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -65,7 +65,7 @@ Permission:
 - ROLE_WEBINTERFACE_BACKUPS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",

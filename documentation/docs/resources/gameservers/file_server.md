@@ -24,7 +24,7 @@ dir=/games/ni1_1/ftproot/ (optional)
 search=*.cfg (optional)
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -76,7 +76,7 @@ GET Parameter:
 file=/games/ni1_1/ftproot/restart.log
 ```
 
-Response:
+Example Response:
 ```json
 {
   "status": "success",
@@ -114,7 +114,7 @@ Permission:
 - ROLE_WEBINTERFACE_FILEBROWSER_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -158,7 +158,7 @@ DELETE Parameter:
 path=/games/ni1_1/ftproot/restart.log
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -189,7 +189,7 @@ target_name=restart-copy.log
 
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -225,7 +225,7 @@ target_path=/games/ni1_1/ftproot/minecraft/
 target_filename=old-restart.log (optional, can be only used for files)
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -254,7 +254,7 @@ path=/games/ni1_1/ftproot/
 name=newDirectory
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -281,7 +281,7 @@ GET Parameter:
 path=/games/ni1_1/ftproot/
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",

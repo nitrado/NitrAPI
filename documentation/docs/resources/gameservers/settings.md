@@ -19,7 +19,7 @@ key=mysetting
 value=true
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -48,7 +48,7 @@ Permission:
 - ROLE_WEBINTERFACE_SETTINGS_READ
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -102,7 +102,7 @@ POST Parameter:
 name=My new config set (optional)
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -124,7 +124,7 @@ Permission:
 - ROLE_WEBINTERFACE_SETTINGS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -147,7 +147,7 @@ Permission:
 - ROLE_WEBINTERFACE_SETTINGS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",

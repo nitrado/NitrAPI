@@ -14,7 +14,7 @@ Permission:
 - ROLE_GAMESERVER_CHANGE_GAME
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -80,7 +80,7 @@ POST Parameters:
 game=7daystodie (provide the folder short of the game list)
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -109,7 +109,7 @@ game=arma3 (provide the folder short of the game list)
 modpack=AltisLife-3.1.4.8-extDB-0.zip (optional, the file name of the modpack)
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -136,7 +136,7 @@ DELETE Parameters:
 game=7daystodie (provide the folder short of the game list)
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",

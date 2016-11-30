@@ -9,7 +9,7 @@ Request:
 GET /services/<id>/gameservers/games/minecraft?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -133,7 +133,7 @@ only=0
 firewall=off
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -163,7 +163,7 @@ world=minecraft/world
 limit=0
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -194,7 +194,7 @@ password=blahblahblah
 
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -225,7 +225,7 @@ password=blahblahblah
 
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -256,7 +256,7 @@ signs=1
 reset=1 #only if you want to reset it ;-)
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -285,7 +285,7 @@ POST Parameters:
 md5=bd1e162378c019cf3ee69ce8b6680b92
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -307,7 +307,7 @@ Permission:
 - ROLE_WEBINTERFACE_GENERAL_CONTROL
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -329,7 +329,7 @@ Permission:
 - ROLE_WEBINTERFACE_GENERAL_CONTROL
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -356,7 +356,7 @@ GET Parameters:
 username=tyrola
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -390,7 +390,7 @@ GET Parameters:
 username=Tyrola
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -418,7 +418,7 @@ Permission:
 - ROLE_WEBINTERFACE_GENERAL_CONTROL
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",

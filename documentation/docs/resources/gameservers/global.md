@@ -9,7 +9,7 @@ Request:
 GET /services/<id>/gameservers?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -140,7 +140,7 @@ GET Parameters:
 hours=24 (optional)
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -239,7 +239,7 @@ message=This message will be posted in the restart.log File (optional)
 restart_message=This message will be posted in the Ingame Chat if available (optional)
 ```
 
-Response:
+Example Response:
 ```json
 {
   "status": "success",
@@ -267,7 +267,7 @@ message=This message will be posted in the restart.log File (optional)
 stop_message=This message will be posted in the Ingame Chat if available (optional)
 ```
 
-Response:
+Example Response:
 ```json
 {
   "status": "success",
@@ -295,7 +295,7 @@ POST Parameters:
 password=ChestersMill
 ```
 
-Response:
+Example Response:
 ```json
 {
   "status": "success",
@@ -322,7 +322,7 @@ POST Parameters:
 password=ChestersMill
 ```
 
-Response:
+Example Response:
 ```json
 {
   "status": "success",
@@ -349,7 +349,7 @@ POST Parameters:
 password=ChestersMill (optional)
 ```
 
-Response:
+Example Response:
 ```json
 {
   "status": "success",

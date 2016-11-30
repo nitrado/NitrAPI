@@ -12,7 +12,7 @@ Request:
 GET /services/<id>/gameservers/addons/?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -41,7 +41,7 @@ POST parameters:
 addon=crosshair (The unique name of the addon)
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -63,7 +63,7 @@ POST parameters:
 addon=crosshair (The unique name of the addon)
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -85,7 +85,7 @@ POST parameters:
 addon=crosshair (The unique name of the addon)
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",

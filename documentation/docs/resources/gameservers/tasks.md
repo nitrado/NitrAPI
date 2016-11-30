@@ -25,7 +25,7 @@ Permission:
 - ROLE_WEBINTERFACE_SCHEDULED_RESTART_READ
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -69,7 +69,7 @@ action_method=restart
 action_data="Server will be restarted now..." (optional)
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -96,7 +96,7 @@ POST Parameter:
 action_method=stop
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -119,7 +119,7 @@ Permission:
 - ROLE_WEBINTERFACE_SCHEDULED_RESTART_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",

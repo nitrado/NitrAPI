@@ -13,7 +13,7 @@ Request:
 GET /services/<id>/gameservers/ddos?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",

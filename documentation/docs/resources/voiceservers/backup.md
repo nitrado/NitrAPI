@@ -19,7 +19,7 @@ Permission:
 - ROLE_WEBINTERFACE_BACKUPS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -50,7 +50,7 @@ Request Body:
 <the compressed and encrypted teamspeak 3 file>
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -76,7 +76,7 @@ Permission:
 - ROLE_WEBINTERFACE_BACKUPS_READ
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -100,7 +100,7 @@ Permission:
 - ROLE_WEBINTERFACE_BACKUPS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -122,7 +122,7 @@ Permission:
 - ROLE_WEBINTERFACE_BACKUPS_WRITE
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",

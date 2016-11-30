@@ -10,7 +10,7 @@ Request:
 GET /order/payment/payment_methods?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -54,7 +54,7 @@ Request:
 GET /order/payment/countries?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```
 {  
    "status":"success",
@@ -92,7 +92,7 @@ country=DE (2 digit ISO country code for transaction)
 bank=ABANAL2A [optional] (only if you use gc_ideal as payment method]
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",

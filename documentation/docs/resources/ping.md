@@ -7,7 +7,7 @@ Request:
 GET /ping
 ```
 
-Response:
+Example Response:
 ```json
 {
     "status": "success",

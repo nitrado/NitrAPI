@@ -13,6 +13,7 @@ pages:
   - Websocket: 'resources/websocket.md'
   - Webinterface: 'resources/webinterface.md'
   - Gameserver: 'resources/gameserver.md'
+  - Cloud Server: 'resources/cloud_server.md'
 
 - Order Resources:
   - Information: 'resources/order/information.md'
@@ -24,6 +25,11 @@ pages:
   - Ventrilo: 'resources/order/ventrilo.md'
   - Mumble: 'resources/order/mumble.md'
   - Bouncer: 'resources/order/bouncer.md'
+
+- Cloud Server Resources:
+  - Global: 'resources/cloud_servers/global.md'
+  - Power Events: 'resources/cloud_servers/power_events.md'
+  - Traffic: 'resources/cloud_servers/traffic.md'
 
 - Gameserver Resources:
   - Global: 'resources/gameservers/global.md'

@@ -17,7 +17,7 @@ location_id=<location_id>
 sale_service=<service_id> (optional, service id of service which needs to be switched)
 ```
 
-Response:
+Example Response:
 ```
 {  
    "status":"success",
@@ -101,7 +101,7 @@ rental_time=720 (Rental time in hours)
 parts[package]=2
 ```
 
-Response:
+Example Response:
 ```
 {
 
@@ -126,7 +126,7 @@ method=extend
 service_id=1 (Service id of the service who needs to be extended)
 ```
 
-Response:
+Example Response:
 ```
 {  
    "status":"success",
@@ -164,7 +164,7 @@ method=extend
 service_id=1 (Service id of the service who needs to be extended)
 ```
 
-Response:
+Example Response:
 ```
 {
 
@@ -196,7 +196,7 @@ method=switch
 service_id=1 (Service id of the service who needs to switched.)
 ```
 
-Response:
+Example Response:
 ```
 {
 

@@ -7,7 +7,7 @@ Request:
 GET /user?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -46,7 +46,7 @@ Request:
 GET /user/webinterface_token?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -68,7 +68,7 @@ Request:
 DELETE /user/webinterface_token?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",

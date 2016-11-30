@@ -9,7 +9,7 @@ Request:
 GET /services?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -117,7 +117,7 @@ Request:
 GET /services/<id>?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
@@ -161,7 +161,7 @@ Permission:
 - ROLE_OWNER
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -249,7 +249,7 @@ auto_extend_id=0 (0 means disabled otherwise select id)
 rental_time=720 (Selected rental time in hours) 
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",
@@ -277,7 +277,7 @@ GET Parameters:
 page=2 (optional)
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status":"success",

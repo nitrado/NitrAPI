@@ -18,7 +18,7 @@ Permission:
 - ROLE_WEBINTERFACE_GENERAL_CONTROL
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status": "success",
@@ -46,7 +46,7 @@ POST Parameter:
 command=help
 ```
 
-Response:
+Example Response:
 ```json
 {  
    "status": "success",

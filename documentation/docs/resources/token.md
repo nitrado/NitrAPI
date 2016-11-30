@@ -7,7 +7,7 @@ Request:
 GET /token?access_token=<access_token>
 ```
 
-Response:
+Example Response:
 ```json
 {
    "status":"success",
