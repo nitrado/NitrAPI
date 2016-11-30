@@ -1,0 +1,23 @@
+.wy-side-nav-search {
+    background-color: #ffd744;
+}
+
+.wy-side-nav-search input[type=text] {
+    border-color: #404040;
+}
+
+.wy-side-nav-search>a {
+    color: #404040;
+}
+
+a, a:hover {
+    color: #eec83f;
+}
+
+a:visited {
+    color: #e0bc3a;
+}
+
+.wy-side-nav-search>a:visited {
+    color: #404040;
+}

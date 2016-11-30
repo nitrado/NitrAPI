@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="marbis GmbH">
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Global - Nitrapi Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  <link href="../../../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Global";
+    var mkdocs_page_input_path = "resources/gameservers/global.md";
+    var mkdocs_page_url = "/resources/gameservers/global/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Nitrapi Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Documentation</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../..">About</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../../oauth/">oAuth2</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ping/">Ping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../user/">User</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../token/">Token</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../services/">Services</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../websocket/">Websocket</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../webinterface/">Webinterface</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../gameserver/">Gameserver</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Order Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../order/information/">Information</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../order/payment/">Payment</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../order/gameserver/">Gameserver</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../order/teamspeak3/">Teamspeak 3</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../order/webspace/">Webspace</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../order/musicbot/">Musicbot</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../order/ventrilo/">Ventrilo</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../order/mumble/">Mumble</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../order/bouncer/">Bouncer</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Gameserver Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Global</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#get-gameservers">GET /gameservers</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-gameserversstats">GET /gameservers/stats</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-gameserversrestart">POST /gameservers/restart</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-gameserversstop">POST /gameservers/stop</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-gameserversftppassword">POST /gameservers/ftp/password</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-gameserversmysqlpassword">POST /gameservers/mysql/password</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-gameserversmysqlreset">POST /gameservers/mysql/reset</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../settings/">Settings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tasks/">Tasks</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../game_switch/">Game switching</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../file_server/">File Server</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../app_server/">App Server</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../addons/">Addons</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../plugins/">Plugins</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../plugin_system/">Plugin System</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ddos/">DDoS History</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Games specific</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../games/minecraft/">Minecraft</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../games/minecraft_backups/">Minecraft Backups</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Voiceserver Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../voiceservers/global/">Global</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../voiceservers/backup/">Backup</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Nitrapi Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Gameserver Resources &raquo;</li>
+        
+      
+    
+    <li>Global</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This are global commands are for gameservers.</p>
+<h2 id="get-gameservers">GET /gameservers</h2>
+<p>This command returns all game server information which are available</p>
+<p>Request:</p>
+<pre><code>GET /services/&lt;id&gt;/gameservers?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;data&quot;:{
+      &quot;gameserver&quot;:{
+         &quot;status&quot;:&quot;started&quot;,
+         &quot;websocket_token&quot;:&quot;b05ac3d5d71a8858fca3011a8c179f1d9ec5ab41&quot;,
+         &quot;hostsystems&quot;:{
+            &quot;linux&quot;:{
+               &quot;hostname&quot;:&quot;ms001.nitrado.net&quot;,
+               &quot;status&quot;:&quot;online&quot;
+            }
+         },
+         &quot;username&quot;: &quot;ni1_1&quot;,
+         &quot;managed_root&quot;: false,
+         &quot;user_id&quot;: 1,
+         &quot;service_id&quot;: 1,
+         &quot;minecraft_mode&quot;:false,
+         &quot;ip&quot;:&quot;127.0.0.1&quot;,
+         &quot;port&quot;:25565,
+         &quot;label&quot;: &quot;ni&quot;,
+         &quot;type&quot;: &quot;Gameserver&quot;,
+         &quot;memory&quot;: &quot;Standard&quot;,
+         &quot;memory_total&quot;: 1024,
+         &quot;game&quot;:&quot;mc&quot;,
+         &quot;modpacks&quot;:{  
+            &quot;mcrdns&quot;:{  
+               &quot;name&quot;:&quot;Pixelmon Craft&quot;,
+               &quot;modpack_version&quot;:&quot;4.0.6&quot;,
+               &quot;game_version&quot;:&quot;1.8.4&quot;
+            }
+         },
+         &quot;slots&quot;:4,
+         &quot;location&quot;:&quot;DE&quot;,
+         &quot;credentials&quot;:{
+            &quot;ftp&quot;:{
+               &quot;hostname&quot;:&quot;dev001.nitrado.net&quot;,
+               &quot;port&quot;:21,
+               &quot;username&quot;:&quot;ni1_1&quot;,
+               &quot;password&quot;:&quot;4x8x15x16x23x42&quot;
+            },
+            &quot;mysql&quot;:{
+               &quot;hostname&quot;:&quot;dev001.nitrado.net&quot;,
+               &quot;port&quot;:3306,
+               &quot;username&quot;:&quot;ni1_1&quot;,
+               &quot;password&quot;:&quot;4x8x15x16x23x42&quot;,
+               &quot;database&quot;:&quot;ni1_1_DB&quot;
+            }
+         },
+         &quot;settings&quot;:{
+            &quot;base&quot;:{
+                &quot;dailyrestart&quot;:&quot;false&quot;
+            },
+            &quot;config&quot;:{
+               &quot;pvp&quot;:&quot;true&quot;,
+               &quot;friendlyfire&quot;:&quot;false&quot;
+            }
+         },
+         &quot;quota&quot;:{
+            &quot;block_usage&quot;:437656,
+            &quot;block_softlimit&quot;:10485760,
+            &quot;block_hardlimit&quot;:15728640,
+            &quot;file_usage&quot;:456,
+            &quot;file_softlimit&quot;:1200000,
+            &quot;file_hardlimit&quot;:2000000
+         },
+         &quot;query&quot;:{
+            &quot;server_name&quot;:&quot;Minecraft Server&quot;,
+            &quot;connect_ip&quot;:&quot;127.0.0.1:25565&quot;,
+            &quot;map&quot;:&quot;random&quot;,
+            &quot;version&quot;:&quot;1.8&quot;,
+            &quot;player_current&quot;:1,
+            &quot;player_max&quot;:4,
+            &quot;players&quot;: [
+               {
+                  &quot;id&quot;: 1,
+                  &quot;name&quot;: &quot;Tyrola&quot;,
+                  &quot;bot&quot;: false,
+                  &quot;score&quot;: 0,
+                  &quot;frags&quot;: 0,
+                  &quot;deaths&quot;: 0,
+                  &quot;time&quot;: 31,
+                  &quot;ping&quot;: 8
+               }
+            ]
+         }
+      }
+   }
+}
+</code></pre>
+
+<p>List of possible gameserver types:</p>
+<ul>
+<li>Gameserver</li>
+<li>Gameserver_Basic</li>
+<li>Gameserver_EPS</li>
+</ul>
+<p>List of possible memory types:</p>
+<ul>
+<li>Standard</li>
+<li>Advanced</li>
+<li>Professional</li>
+<li>Ultimate</li>
+</ul>
+<p>List of possible status codes:</p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th align="right">Game specific</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>started</td>
+<td>Will be returned if the gameserver is currently running.</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>stopped</td>
+<td>The server is currently stopped.</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>stopping</td>
+<td>The server will be stopped now.</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>restarting</td>
+<td>The server is currently performing a restart.</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>suspended</td>
+<td>Will be returned if the server is suspended, which means it needs to be reactivated on the website.</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>guardian_locked</td>
+<td>If your services are guardian protected, you are currently outside of the allowed times.</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>gs_installation</td>
+<td>The server is currently performing a game switching action.</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>backup_restore</td>
+<td>A backup will be restored now..</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>backup_creation</td>
+<td>A new backup will be created now.</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>chunkfix</td>
+<td>The Server is running a chunkfix.</td>
+<td align="right">Minecraft</td>
+</tr>
+<tr>
+<td>overviewmap_render</td>
+<td>The Server is running a overview map rendering.</td>
+<td align="right">Minecraft</td>
+</tr>
+</tbody>
+</table>
+<h2 id="get-gameserversstats">GET /gameservers/stats</h2>
+<p>Returns the usage statistics of the gameserver.
+Optionally you can specify a time range between 1-24 hours.</p>
+<p>GET Parameters:</p>
+<pre><code>hours=24 (optional)
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;data&quot;:{  
+      &quot;stats&quot;:{  
+         &quot;currentPlayers&quot;:[  
+            [  
+               0.0,
+               1442849100
+            ],
+            [  
+               0.0,
+               1442849400
+            ],
+            [  
+               0.0,
+               1442849700
+            ],
+            [  
+               0.0,
+               1442850000
+            ],
+            [  
+               0.0,
+               1442850300
+            ],
+            ...
+         ],
+         &quot;maxPlayers&quot;:[  
+            [  
+               4.0,
+               1442849100
+            ],
+            [  
+               4.0,
+               1442849400
+            ],
+            [  
+               4.0,
+               1442849700
+            ],
+            ...
+         ],
+         &quot;cpuUsage&quot;:[  
+            [  
+               2.0,
+               1442849100
+            ],
+            [  
+               2.0,
+               1442849400
+            ],
+            [  
+               2.0,
+               1442849700
+            ],
+            ...
+         ],
+         &quot;memoryUsage&quot;:[  
+            [  
+               346.0,
+               1442849100
+            ],
+            [  
+               346.0,
+               1442849400
+            ],
+            [  
+               346.0,
+               1442849700
+            ],
+            ...
+         ]
+      }
+   }
+}
+</code></pre>
+
+<h2 id="post-gameserversrestart">POST /gameservers/restart</h2>
+<p>Starts or restarts the game server. Optional with restart message for restart.log.</p>
+<p>Request:</p>
+<pre><code>POST /services/&lt;id&gt;/gameservers/restart?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Permission:</p>
+<pre><code>- ROLE_WEBINTERFACE_GENERAL_CONTROL
+</code></pre>
+
+<p>POST Parameters:</p>
+<pre><code>message=This message will be posted in the restart.log File (optional)
+restart_message=This message will be posted in the Ingame Chat if available (optional)
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;message&quot;: &quot;Server will be restarted now&quot;
+}
+</code></pre>
+
+<h2 id="post-gameserversstop">POST /gameservers/stop</h2>
+<p>Stopps the game server. Optional with stop message for restart.log</p>
+<p>Request:</p>
+<pre><code>POST /services/&lt;id&gt;/gameservers/stop?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Permission:</p>
+<pre><code>- ROLE_WEBINTERFACE_GENERAL_CONTROL
+</code></pre>
+
+<p>POST Parameters:</p>
+<pre><code>message=This message will be posted in the restart.log File (optional)
+stop_message=This message will be posted in the Ingame Chat if available (optional)
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;message&quot;: &quot;Server will be stopped now&quot;
+}
+</code></pre>
+
+<h2 id="post-gameserversftppassword">POST /gameservers/ftp/password</h2>
+<p>Changes the ftp password from the gameserver.</p>
+<p>Request:</p>
+<pre><code>POST /services/&lt;id&gt;/gameservers/ftp/password?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Permission:</p>
+<pre><code>- ROLE_WEBINTERFACE_FTP_CREDENTIALS_WRITE
+</code></pre>
+
+<p>POST Parameters:</p>
+<pre><code>password=ChestersMill
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;message&quot;: &quot;The ftp password has been changed&quot;
+}
+</code></pre>
+
+<h2 id="post-gameserversmysqlpassword">POST /gameservers/mysql/password</h2>
+<p>Changes the MySQL password from the gameservers database.</p>
+<p>Request:</p>
+<pre><code>POST /services/&lt;id&gt;/gameservers/mysql/password?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Permission:</p>
+<pre><code>- ROLE_WEBINTERFACE_MYSQL_CREDENTIALS_WRITE
+</code></pre>
+
+<p>POST Parameters:</p>
+<pre><code>password=ChestersMill
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;message&quot;: &quot;The MySQL database password has been changed&quot;
+}
+</code></pre>
+
+<h2 id="post-gameserversmysqlreset">POST /gameservers/mysql/reset</h2>
+<p>Truncates the MySQL database of the gameserver. Optionally you can set a new password.</p>
+<p>Request:</p>
+<pre><code>POST /services/&lt;id&gt;/gameservers/mysql/reset?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Permission:</p>
+<pre><code>- ROLE_WEBINTERFACE_MYSQL_CREDENTIALS_WRITE
+</code></pre>
+
+<p>POST Parameters:</p>
+<pre><code>password=ChestersMill (optional)
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;message&quot;: &quot;The MySQL database has been reset&quot;
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../settings/" class="btn btn-neutral float-right" title="Settings">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../order/bouncer/" class="btn btn-neutral" title="Bouncer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../order/bouncer/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../settings/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>

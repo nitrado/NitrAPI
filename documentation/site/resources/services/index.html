@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="marbis GmbH">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Services - Nitrapi Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Services";
+    var mkdocs_page_input_path = "resources/services.md";
+    var mkdocs_page_url = "/resources/services/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Nitrapi Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Documentation</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../..">About</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../oauth/">oAuth2</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ping/">Ping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../user/">User</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../token/">Token</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Services</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#get-services">GET /services</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-servicesid">GET /services/:id</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-servicesidauto_extend">GET /services/:id/auto_extend</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-servicesidauto_extend">POST /services/:id/auto_extend</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-servicesidlogs">POST /services/:id/logs</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../websocket/">Websocket</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webinterface/">Webinterface</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameserver/">Gameserver</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Order Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/information/">Information</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/payment/">Payment</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/gameserver/">Gameserver</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/teamspeak3/">Teamspeak 3</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/webspace/">Webspace</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/musicbot/">Musicbot</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/ventrilo/">Ventrilo</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/mumble/">Mumble</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/bouncer/">Bouncer</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Gameserver Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/global/">Global</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/settings/">Settings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/tasks/">Tasks</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/game_switch/">Game switching</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/file_server/">File Server</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/app_server/">App Server</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/addons/">Addons</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/plugins/">Plugins</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/plugin_system/">Plugin System</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/ddos/">DDoS History</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Games specific</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/games/minecraft/">Minecraft</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/games/minecraft_backups/">Minecraft Backups</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Voiceserver Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../voiceservers/global/">Global</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../voiceservers/backup/">Backup</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Nitrapi Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Resources &raquo;</li>
+        
+      
+    
+    <li>Services</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Services are your rented products. This resources are very terrific. Be careful with your services, all actions are definite.</p>
+<h2 id="get-services">GET /services</h2>
+<p>Get a full list with all rented services and/or services with subuser permissions.</p>
+<p>Request:</p>
+<pre><code>GET /services?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;data&quot;:{
+      &quot;services&quot;:[
+         {
+            &quot;id&quot;:3,
+            &quot;status&quot;:&quot;active&quot;,
+            &quot;websocket_token&quot;:&quot;b05ac3d5d71a8858fca3011a8c179f1d9ec5ab41&quot;,
+            &quot;user_id&quot;:2,
+            &quot;auto_extension&quot;:false,
+            &quot;type&quot;:&quot;gameserver&quot;,
+            &quot;details&quot;:{  
+               &quot;address&quot;:&quot;10.10.0.6:27015&quot;,
+               &quot;name&quot;:&quot;Nitrado.net Battlefield 4 Server&quot;,
+               &quot;game&quot;:&quot;Battlefield 4&quot;,
+               &quot;portlist_short&quot;:&quot;bf4&quot;,
+               &quot;folder_short&quot;:&quot;bf4&quot;
+            },
+            &quot;username&quot;:&quot;ni2_1&quot;,
+            &quot;roles&quot;:[
+               &quot;ROLE_OWNER&quot;
+            ]
+         },
+         {
+            &quot;id&quot;:6,
+            &quot;status&quot;:&quot;active&quot;,
+            &quot;websocket_token&quot;:&quot;49232226bcf1568bbc2b659325a3339d3af57fea&quot;,
+            &quot;user_id&quot;:1,
+            &quot;auto_extension&quot;:false,
+            &quot;type&quot;:&quot;gameserver&quot;,
+            &quot;details&quot;:{  
+               &quot;address&quot;:&quot;10.10.0.7:27015&quot;,
+               &quot;name&quot;:&quot;Nitrado.net Minecraft Server&quot;,
+               &quot;game&quot;:&quot;Minecraft&quot;,
+               &quot;portlist_short&quot;:&quot;mcr&quot;,
+               &quot;folder_short&quot;:&quot;minecraft&quot;
+            },
+            &quot;username&quot;:&quot;ni1_1&quot;,
+            &quot;roles&quot;:[
+               &quot;ROLE_GAMESERVER_CHANGE_GAME&quot;,
+               &quot;ROLE_WEBINTERFACE_GENERAL_CONTROL&quot;,
+               &quot;ROLE_WEBINTERFACE_SETTINGS_READ&quot;,
+               &quot;ROLE_WEBINTERFACE_SETTINGS_WRITE&quot;,
+               &quot;ROLE_WEBINTERFACE_LOGS_READ&quot;,
+               &quot;ROLE_WEBINTERFACE_SCHEDULED_RESTART_READ&quot;,
+               &quot;ROLE_WEBINTERFACE_SCHEDULED_RESTART_WRITE&quot;,
+               &quot;ROLE_WEBINTERFACE_BACKUPS_READ&quot;,
+               &quot;ROLE_WEBINTERFACE_BACKUPS_WRITE&quot;,
+               &quot;ROLE_WEBINTERFACE_FTP_CREDENTIALS_READ&quot;,
+               &quot;ROLE_WEBINTERFACE_FTP_CREDENTIALS_WRITE&quot;,
+               &quot;ROLE_WEBINTERFACE_MYSQL_CREDENTIALS_READ&quot;,
+               &quot;ROLE_WEBINTERFACE_DEBUG_CONSOLE_READ&quot;,
+               &quot;ROLE_WEBINTERFACE_DEBUG_CONSOLE_WRITE&quot;,
+               &quot;ROLE_WEBINTERFACE_FILEBROWSER_READ&quot;,
+               &quot;ROLE_WEBINTERFACE_FILEBROWSER_WRITE&quot;,
+               &quot;ROLE_WEBINTERFACE_GAME_RCON_READ&quot;,
+               &quot;ROLE_WEBINTERFACE_GAME_RCON_WRITE&quot;,
+               &quot;ROLE_WEBINTERFACE_MYSQL_CREDENTIALS_WRITE&quot;
+            ]
+         }
+      ]
+   }
+}
+</code></pre>
+
+<p><strong>Available roles and description</strong></p>
+<ul>
+<li>ROLE_GAMESERVER_CHANGE_GAME: Can change server game</li>
+<li>ROLE_WEBINTERFACE_GENERAL_CONTROL: Can use generic control commands</li>
+<li>ROLE_WEBINTERFACE_BACKUPS_READ: Can view current backups</li>
+<li>ROLE_WEBINTERFACE_BACKUPS_WRITE: Can restore available backups</li>
+<li>ROLE_WEBINTERFACE_DEBUG_CONSOLE_READ: Can view the debug console</li>
+<li>ROLE_WEBINTERFACE_DEBUG_CONSOLE_WRITE: Can use the debug console</li>
+<li>ROLE_WEBINTERFACE_FILEBROWSER_READ: Can view/download files from the file server</li>
+<li>ROLE_WEBINTERFACE_FILEBROWSER_WRITE: Can change/upload files via file server</li>
+<li>ROLE_WEBINTERFACE_FTP_CREDENTIALS_READ Can see ftp access credentials</li>
+<li>ROLE_WEBINTERFACE_FTP_CREDENTIALS_WRITE: Can change ftp access credentials</li>
+<li>ROLE_WEBINTERFACE_GAME_RCON_READ: Allows a user to send RCON-commands that retrieve infos</li>
+<li>ROLE_WEBINTERFACE_GAME_RCON_WRITE: Allows a user to send RCON-commands that change settings</li>
+<li>ROLE_WEBINTERFACE_LOGS_READ: Can see webinterface logs</li>
+<li>ROLE_WEBINTERFACE_MYSQL_CREDENTIALS_READ: Can view MySQL access credentials</li>
+<li>ROLE_WEBINTERFACE_MYSQL_CREDENTIALS_WRITE: Can change MySQL access credentials</li>
+<li>ROLE_WEBINTERFACE_SCHEDULED_RESTART_READ: Can view scheduled server restarts</li>
+<li>ROLE_WEBINTERFACE_SCHEDULED_RESTART_WRITE: Can edit scheduled server restarts</li>
+<li>ROLE_WEBINTERFACE_SETTINGS_READ: Has access to server settings</li>
+<li>ROLE_WEBINTERFACE_SETTINGS_WRITE: Can change server settings</li>
+</ul>
+<p><strong>Available status codes</strong></p>
+<ul>
+<li>active: The service is active and useable</li>
+<li>installing: The service is currently installing</li>
+<li>suspended: The service is suspended and can be reactivated</li>
+<li>adminlocked: The service is admin locked, please contact support.</li>
+<li>adminlocked_suspended: The service is admin locked and suspended.</li>
+</ul>
+<h2 id="get-servicesid">GET /services/:id</h2>
+<p>Get all service informations by a specific service id.</p>
+<p>Request:</p>
+<pre><code>GET /services/&lt;id&gt;?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;data&quot;:{
+      &quot;service&quot;:{
+         &quot;id&quot;:3,
+         &quot;status&quot;:&quot;active&quot;,
+         &quot;websocket_token&quot;:&quot;b05ac3d5d71a8858fca3011a8c179f1d9ec5ab41&quot;,
+         &quot;user_id&quot;:2,
+         &quot;username&quot;:&quot;ni2_2&quot;,
+         &quot;auto_extension&quot;:false,
+         &quot;type&quot;:&quot;gameserver&quot;,
+         &quot;details&quot;:{  
+            &quot;address&quot;:&quot;10.10.0.6:27015&quot;,
+            &quot;name&quot;:&quot;Nitrado.net Battlefield 4 Server&quot;,
+            &quot;game&quot;:&quot;Battlefield 4&quot;,
+            &quot;portlist_short&quot;:&quot;bf4&quot;,
+            &quot;folder_short&quot;:&quot;bf4&quot;
+         },
+         &quot;start_date&quot;:1422455269,
+         &quot;suspend_date&quot;:1425048169,
+         &quot;delete_date&quot;:1425652969
+      }
+   }
+}
+</code></pre>
+
+<h2 id="get-servicesidauto_extend">GET /services/:id/auto_extend</h2>
+<p>Returns auto extension information and status.</p>
+<p>Request:</p>
+<pre><code>GET /services/&lt;id&gt;/auto_extend?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Permission:</p>
+<pre><code>- ROLE_OWNER
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;data&quot;:{  
+      &quot;auto_extend&quot;:[  
+         {  
+            &quot;id&quot;:0,
+            &quot;name&quot;:&quot;NONE&quot;,
+            &quot;active&quot;:true,
+            &quot;description&quot;:&quot;Disable automatic extension&quot;,
+            &quot;available&quot;:true,
+            &quot;payment_method&quot;:null,
+            &quot;rental_times&quot;:{  
+               &quot;72&quot;:300,
+               &quot;720&quot;:1200,
+               &quot;2160&quot;:3200,
+               &quot;8760&quot;:12000
+            }
+         },
+         {  
+            &quot;id&quot;:1,
+            &quot;name&quot;:&quot;CREDITS_ONLY&quot;,
+            &quot;active&quot;:false,
+            &quot;description&quot;:&quot;Extend with credits&quot;,
+            &quot;available&quot;:true,
+            &quot;payment_method&quot;:null,
+            &quot;rental_times&quot;:{  
+               &quot;72&quot;:300,
+               &quot;720&quot;:1200,
+               &quot;2160&quot;:3200,
+               &quot;8760&quot;:12000
+            }
+         },
+         {  
+            &quot;id&quot;:2,
+            &quot;name&quot;:&quot;PAYPAL_CREDITS_FIRST&quot;,
+            &quot;active&quot;:false,
+            &quot;description&quot;:&quot;Extend with Paypal, use credits first&quot;,
+            &quot;available&quot;:true,
+            &quot;payment_method&quot;:&quot;gc_paypal&quot;,
+            &quot;rental_times&quot;:{  
+               &quot;72&quot;:300,
+               &quot;720&quot;:1200,
+               &quot;2160&quot;:3200,
+               &quot;8760&quot;:12000
+            }
+         },
+         {  
+            &quot;id&quot;:52,
+            &quot;name&quot;:&quot;PAYPAL&quot;,
+            &quot;active&quot;:false,
+            &quot;description&quot;:&quot;Extend with Paypal&quot;,
+            &quot;available&quot;:true,
+            &quot;payment_method&quot;:&quot;gc_paypal&quot;,
+            &quot;rental_times&quot;:{  
+               &quot;72&quot;:300,
+               &quot;720&quot;:1200,
+               &quot;2160&quot;:3200,
+               &quot;8760&quot;:12000
+            }
+         }
+      ]
+   }
+}
+</code></pre>
+
+<h2 id="post-servicesidauto_extend">POST /services/:id/auto_extend</h2>
+<p>Get all service informations by a specific service id.</p>
+<p>Request:</p>
+<pre><code>POST /services/&lt;id&gt;/auto_extend?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Permission:</p>
+<pre><code>- ROLE_OWNER
+</code></pre>
+
+<p>POST Parameters:</p>
+<pre><code>auto_extend_id=0 (0 means disabled otherwise select id) 
+rental_time=720 (Selected rental time in hours) 
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;message&quot;:&quot;The auto extension has been disabled.&quot;
+}
+</code></pre>
+
+<h2 id="post-servicesidlogs">POST /services/:id/logs</h2>
+<p>Returns the all log entries for the service. This action shows all done API requests.</p>
+<p>Request:</p>
+<pre><code>GET /services/&lt;id&gt;/logs?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Permission:</p>
+<pre><code>- ROLE_WEBINTERFACE_LOGS_READ
+</code></pre>
+
+<p>GET Parameters:</p>
+<pre><code>page=2 (optional)
+</code></pre>
+
+<p>Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;data&quot;:{  
+      &quot;current_page&quot;:1,
+      &quot;logs_per_page&quot;:40,
+      &quot;page_count&quot;:1,
+      &quot;log_count&quot;:5,
+      &quot;logs&quot;:[  
+         {  
+            &quot;user&quot;:&quot;Tyrola&quot;,
+            &quot;category&quot;:&quot;server&quot;,
+            &quot;message&quot;:&quot;Restart&quot;,
+            &quot;created_at&quot;:&quot;2015-10-07T00:31:23&quot;
+         },
+         {  
+            &quot;user&quot;:&quot;Tyrola&quot;,
+            &quot;category&quot;:&quot;filebrowser&quot;,
+            &quot;message&quot;:&quot;Has edited the file server.properties&quot;,
+            &quot;created_at&quot;:&quot;2015-10-07T00:31:19&quot;
+         },
+         {  
+            &quot;user&quot;:&quot;Tyrola&quot;,
+            &quot;category&quot;:&quot;server&quot;,
+            &quot;message&quot;:&quot;Restart&quot;,
+            &quot;created_at&quot;:&quot;2015-09-28T14:17:07&quot;
+         },
+         {  
+            &quot;user&quot;:&quot;Tyrola&quot;,
+            &quot;category&quot;:&quot;server&quot;,
+            &quot;message&quot;:&quot;Restart&quot;,
+            &quot;created_at&quot;:&quot;2015-09-23T01:18:42&quot;
+         },
+         {  
+            &quot;user&quot;:&quot;Tyrola&quot;,
+            &quot;category&quot;:&quot;server&quot;,
+            &quot;message&quot;:&quot;Restart&quot;,
+            &quot;created_at&quot;:&quot;2015-09-22T23:29:15&quot;
+         }
+      ]
+   }
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../websocket/" class="btn btn-neutral float-right" title="Websocket">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../token/" class="btn btn-neutral" title="Token"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../token/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../websocket/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

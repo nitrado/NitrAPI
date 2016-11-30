@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/oauth/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/resources/ping/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/user/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/token/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/services/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/websocket/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/webinterface/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/gameserver/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/resources/order/information/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/order/payment/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/order/gameserver/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/order/teamspeak3/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/order/webspace/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/order/musicbot/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/order/ventrilo/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/order/mumble/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/order/bouncer/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/resources/gameservers/global/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/gameservers/settings/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/gameservers/tasks/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/gameservers/game_switch/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/gameservers/file_server/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/gameservers/app_server/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/gameservers/addons/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/gameservers/plugins/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/gameservers/plugin_system/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/gameservers/ddos/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/resources/voiceservers/global/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/resources/voiceservers/backup/</loc>
+     <lastmod>2016-11-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>
