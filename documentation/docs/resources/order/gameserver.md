@@ -18,7 +18,7 @@ GET /order/pricing/gameserver?access_token=<access_token>
 
 Parameters:
 ```
-location_id=<location_id>
+location=<location_id>
 sale_service=<service_id> (optional, service id of service which needs to be switched)
 ```
 
@@ -347,7 +347,7 @@ POST /order/order/gameserver?access_token=<access_token>
 
 POST Parameters:
 ```
-location_id=2 (Location id from the location list)
+location=<location_id> (Location id from the location list)
 price=800 (Calculated price from the pricing call) 
 rental_time=720 (Rental time in hours)
 dimensions[type]=publicserver
@@ -444,7 +444,7 @@ POST /order/order/gameserver?access_token=<access_token>
 
 POST Parameters:
 ```
-location_id=2 (Location id from the location list)
+location=<location_id> (Location id from the location list)
 price=-920 (Calculated price from the pricing call) 
 rental_time=720 (Rental time in hours)
 dimensions[type]=publicserver

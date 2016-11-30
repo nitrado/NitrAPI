@@ -13,7 +13,7 @@ GET /order/pricing/musicbot?access_token=<access_token>
 
 Parameters:
 ```
-location_id=<location_id>
+location=<location_id>
 sale_service=<service_id> (optional, service id of service which needs to be switched)
 ```
 
@@ -113,7 +113,7 @@ POST /order/order/musicbot?access_token=<access_token>
 
 POST Parameters:
 ```
-location_id=2 (Location id from the location list)
+location=<location_id> (Location id from the location list)
 price=1000 (Calculated price from the pricing call) 
 rental_time=720 (Rental time in hours)
 parts[package]=2
@@ -206,7 +206,7 @@ POST /order/order/musicbot?access_token=<access_token>
 
 POST Parameters:
 ```
-location_id=2 (Location id from the location list)
+location=<location_id> (Location id from the location list)
 price=-80 (Calculated price from the pricing call) 
 rental_time=720 (Rental time in hours)
 parts[package]=2
