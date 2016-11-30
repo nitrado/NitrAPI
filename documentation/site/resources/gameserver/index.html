@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="marbis GmbH">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Gameserver - Nitrapi Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Gameserver";
+    var mkdocs_page_input_path = "resources/gameserver.md";
+    var mkdocs_page_url = "/resources/gameserver/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Nitrapi Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Documentation</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../..">About</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../oauth/">oAuth2</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ping/">Ping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../user/">User</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../token/">Token</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../services/">Services</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../websocket/">Websocket</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webinterface/">Webinterface</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Gameserver</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#get-gameservergames">GET /gameserver/games</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../cloud_server/">Cloud Server</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Order Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/information/">Information</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/payment/">Payment</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/gameserver/">Gameserver</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/teamspeak3/">Teamspeak 3</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/webspace/">Webspace</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/musicbot/">Musicbot</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/ventrilo/">Ventrilo</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/mumble/">Mumble</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../order/bouncer/">Bouncer</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Cloud Server Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../cloud_servers/global/">Global</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../cloud_servers/power_events/">Power Events</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../cloud_servers/traffic/">Traffic</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Gameserver Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/global/">Global</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/settings/">Settings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/tasks/">Tasks</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/game_switch/">Game switching</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/file_server/">File Server</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/app_server/">App Server</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/addons/">Addons</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/plugins/">Plugins</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/plugin_system/">Plugin System</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/ddos/">DDoS History</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Games specific</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/games/minecraft/">Minecraft</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../gameservers/games/minecraft_backups/">Minecraft Backups</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Voiceserver Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../voiceservers/global/">Global</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../voiceservers/backup/">Backup</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Nitrapi Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Resources &raquo;</li>
+        
+      
+    
+    <li>Gameserver</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This endpoints are not service independent and available for all users.</p>
+<h2 id="get-gameservergames">GET /gameserver/games</h2>
+<p>List all available games at Nitrado.</p>
+<p>Request:</p>
+<pre><code>GET /gameserver/games?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Example Response:</p>
+<pre><code>{
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;data&quot;: {
+        &quot;games&quot;: {
+            &quot;locations&quot;: [
+                {
+                    &quot;id&quot;: 1,
+                    &quot;country&quot;: &quot;AR&quot;,
+                    &quot;city&quot;: &quot;Buenos Aires&quot;
+                },
+                {
+                    &quot;id&quot;: 2,
+                    &quot;country&quot;: &quot;DE&quot;,
+                    &quot;city&quot;: &quot;Frankfurt am Main&quot;
+                },
+                {
+                    &quot;id&quot;: 3,
+                    &quot;country&quot;: &quot;US&quot;,
+                    &quot;city&quot;: &quot;Los Angeles&quot;
+                },
+                {
+                    &quot;id&quot;: 4,
+                    &quot;country&quot;: &quot;US&quot;,
+                    &quot;city&quot;: &quot;New Jersey&quot;
+                },
+                {
+                    &quot;id&quot;: 5,
+                    &quot;country&quot;: &quot;TR&quot;,
+                    &quot;city&quot;: &quot;Istanbul&quot;
+                }
+            ],
+            &quot;games&quot;: [
+                {
+                    &quot;id&quot;: 322,
+                    &quot;steam_id&quot;: null,
+                    &quot;has_steam_game&quot;: &quot;unknown&quot;,
+                    &quot;name&quot;: &quot;7 Days To Die (Alpha)&quot;,
+                    &quot;minecraft_mode&quot;: false,
+                    &quot;publicserver_only&quot;: false,
+                    &quot;portlist_short&quot;: &quot;sevendtd&quot;,
+                    &quot;folder_short&quot;: &quot;7daystodie&quot;,
+                    &quot;minimum_slots&quot;: 0,
+                    &quot;modpacks&quot;: [ ],
+                    &quot;icons&quot;: {
+                        &quot;x256&quot;: &quot;https://static.nitrado.net/cdn/gameicons/256/7daystodie.jpg&quot;,
+                        &quot;x120&quot;: &quot;https://static.nitrado.net/cdn/gameicons/120/7daystodie.jpg&quot;,
+                        &quot;x64&quot;: &quot;https://static.nitrado.net/cdn/gameicons/64/7daystodie.jpg&quot;,
+                        &quot;x32&quot;: &quot;https://static.nitrado.net/cdn/gameicons/32/7daystodie.jpg&quot;,
+                        &quot;x16&quot;: &quot;https://static.nitrado.net/cdn/gameicons/16/7daystodie.jpg&quot;
+                    },
+                    &quot;locations&quot;: [
+                        2,
+                        3,
+                        4,
+                        5
+                    ]
+                },
+                {
+                    &quot;id&quot;: 225,
+                    &quot;steam_id&quot;: null,
+                    &quot;has_steam_game&quot;: &quot;unknown&quot;,
+                    &quot;name&quot;: &quot;Ace of Spades Classic&quot;,
+                    &quot;minecraft_mode&quot;: true,
+                    &quot;publicserver_only&quot;: true,
+                    &quot;portlist_short&quot;: &quot;aos&quot;,
+                    &quot;folder_short&quot;: &quot;aos&quot;,
+                    &quot;minimum_slots&quot;: 0,
+                    &quot;modpacks&quot;: [ ],
+                    &quot;icons&quot;: {
+                        &quot;x256&quot;: &quot;https://static.nitrado.net/cdn/gameicons/256/aos.jpg&quot;,
+                        &quot;x120&quot;: &quot;https://static.nitrado.net/cdn/gameicons/120/aos.jpg&quot;,
+                        &quot;x64&quot;: &quot;https://static.nitrado.net/cdn/gameicons/64/aos.jpg&quot;,
+                        &quot;x32&quot;: &quot;https://static.nitrado.net/cdn/gameicons/32/aos.jpg&quot;,
+                        &quot;x16&quot;: &quot;https://static.nitrado.net/cdn/gameicons/16/aos.jpg&quot;
+                    },
+                    &quot;locations&quot;: [
+                        2,
+                        3,
+                        4,
+                        5
+                    ]
+                },
+                {
+                    &quot;id&quot;: 55,
+                    &quot;steam_id&quot;: null,
+                    &quot;has_steam_game&quot;: &quot;unknown&quot;,
+                    &quot;name&quot;: &quot;Alien Swarm&quot;,
+                    &quot;minecraft_mode&quot;: false,
+                    &quot;publicserver_only&quot;: false,
+                    &quot;portlist_short&quot;: &quot;asw&quot;,
+                    &quot;folder_short&quot;: &quot;alienswarm&quot;,
+                    &quot;minimum_slots&quot;: 0,
+                    &quot;modpacks&quot;: [ ],
+                    &quot;icons&quot;: {
+                        &quot;x256&quot;: &quot;https://static.nitrado.net/cdn/gameicons/256/alienswarm.jpg&quot;,
+                        &quot;x120&quot;: &quot;https://static.nitrado.net/cdn/gameicons/120/alienswarm.jpg&quot;,
+                        &quot;x64&quot;: &quot;https://static.nitrado.net/cdn/gameicons/64/alienswarm.jpg&quot;,
+                        &quot;x32&quot;: &quot;https://static.nitrado.net/cdn/gameicons/32/alienswarm.jpg&quot;,
+                        &quot;x16&quot;: &quot;https://static.nitrado.net/cdn/gameicons/16/alienswarm.jpg&quot;
+                    },
+                    &quot;locations&quot;: [
+                        2,
+                        3,
+                        4,
+                        5
+                    ]
+                }
+            ]
+        }
+    }
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../cloud_server/" class="btn btn-neutral float-right" title="Cloud Server">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../webinterface/" class="btn btn-neutral" title="Webinterface"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../webinterface/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../cloud_server/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
