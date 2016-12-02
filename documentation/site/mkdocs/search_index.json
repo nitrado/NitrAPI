@@ -101,6 +101,31 @@
             "title": "DELETE /user/webinterface_token"
         }, 
         {
+            "location": "/resources/user_ssh_keys/", 
+            "text": "GET /user/ssh_keys\n\n\nThis endpoint lists up all SSH public keys from your user. This Keys will be used for the Cloud Server Installation.\n\n\nRequest:\n\n\nGET /user/ssh_keys?access_token=\naccess_token\n\n\n\n\n\nExample Response:\n\n\n{  \n   \nstatus\n:\nsuccess\n,\n   \ndata\n:{  \n      \nkeys\n:[  \n         {  \n            \nid\n:1,\n            \ntype\n:\nssh-rsa\n,\n            \npublic_key\n:\nAAAAB3NzaC1yc2EAAAADAQABAAABAQDc4Sm93wXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n,\n            \ncomment\n:\nMy super secret public key... oh wait\n,\n            \nenabled\n:true\n         }\n      ]\n   }\n}\n\n\n\n\nPOST /user/ssh_keys\n\n\nAdds a new SSH public key to your user account.\n\n\nRequest:\n\n\nPOST /user/ssh_keys?access_token=\naccess_token\n\n\n\n\n\nPOST Parameters:\n\n\nkey=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc4Sm93wXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX My super secret public key... oh wait\nenabled=true/false (optional, default is 1)\n\n\n\n\nExample Response:\n\n\n{  \n   \nstatus\n:\nsuccess\n,\n   \nmessage\n:\nThe SSH Key has been added.\n\n}\n\n\n\n\nPOST /user/ssh_keys/:id\n\n\nUpdates a SSH public key from your user account.\n\n\nRequest:\n\n\nPOST /user/ssh_keys/\nid\n?access_token=\naccess_token\n\n\n\n\n\nPOST Parameters:\n\n\nkey=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc4Sm93wXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX My super secret public key... oh wait (optional)\nenabled=true/false (optional)\n\n\n\n\nExample Response:\n\n\n{  \n   \nstatus\n:\nsuccess\n,\n   \nmessage\n:\nThe SSH Key has been updated.\n\n}\n\n\n\n\nDELETE /user/ssh_keys/:id\n\n\nThis endpoint deletes a specific SSH public key from your user account.\n\n\nRequest:\n\n\nDELETE /user/ssh_keys/\nid\n?access_token=\naccess_token\n\n\n\n\n\nExample Response:\n\n\n{  \n   \nstatus\n:\nsuccess\n,\n   \nmessage\n:\nThe SSH Key has been deleted.\n\n}", 
+            "title": "User SSH Keys"
+        }, 
+        {
+            "location": "/resources/user_ssh_keys/#get-userssh_keys", 
+            "text": "This endpoint lists up all SSH public keys from your user. This Keys will be used for the Cloud Server Installation.  Request:  GET /user/ssh_keys?access_token= access_token   Example Response:  {  \n    status : success ,\n    data :{  \n       keys :[  \n         {  \n             id :1,\n             type : ssh-rsa ,\n             public_key : AAAAB3NzaC1yc2EAAAADAQABAAABAQDc4Sm93wXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ,\n             comment : My super secret public key... oh wait ,\n             enabled :true\n         }\n      ]\n   }\n}", 
+            "title": "GET /user/ssh_keys"
+        }, 
+        {
+            "location": "/resources/user_ssh_keys/#post-userssh_keys", 
+            "text": "Adds a new SSH public key to your user account.  Request:  POST /user/ssh_keys?access_token= access_token   POST Parameters:  key=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc4Sm93wXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX My super secret public key... oh wait\nenabled=true/false (optional, default is 1)  Example Response:  {  \n    status : success ,\n    message : The SSH Key has been added. \n}", 
+            "title": "POST /user/ssh_keys"
+        }, 
+        {
+            "location": "/resources/user_ssh_keys/#post-userssh_keysid", 
+            "text": "Updates a SSH public key from your user account.  Request:  POST /user/ssh_keys/ id ?access_token= access_token   POST Parameters:  key=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc4Sm93wXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX My super secret public key... oh wait (optional)\nenabled=true/false (optional)  Example Response:  {  \n    status : success ,\n    message : The SSH Key has been updated. \n}", 
+            "title": "POST /user/ssh_keys/:id"
+        }, 
+        {
+            "location": "/resources/user_ssh_keys/#delete-userssh_keysid", 
+            "text": "This endpoint deletes a specific SSH public key from your user account.  Request:  DELETE /user/ssh_keys/ id ?access_token= access_token   Example Response:  {  \n    status : success ,\n    message : The SSH Key has been deleted. \n}", 
+            "title": "DELETE /user/ssh_keys/:id"
+        }, 
+        {
             "location": "/resources/token/", 
             "text": "GET /token\n\n\nThe token endpoint returns you information about the given access token.\n\n\nRequest:\n\n\nGET /token?access_token=\naccess_token\n\n\n\n\n\nExample Response:\n\n\n{\n   \nstatus\n:\nsuccess\n,\n   \ndata\n:{\n      \ntoken\n:{\n         \naccess_token\n:\nNXXXXXXXXXXXXXXXXXXXXXXkYjViYzIxXXXXXXXXXXXXXXXXXwMWNhNjU0ZQ\n,\n         \nuser\n:{\n            \nid\n:1,\n            \nusername\n:\nTyrola\n\n         },\n         \nvalid_until\n:\n2018-07-29T02:01:55\n,\n         \nscopes\n:[\n            \nuser_info\n,\n            \nservice\n,\n            \nservice_order\n\n         ],\n         \nemployee\n:false\n      }\n   }\n}", 
             "title": "Token"

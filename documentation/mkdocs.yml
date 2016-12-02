@@ -8,6 +8,7 @@ pages:
 - Resources:
   - Ping: 'resources/ping.md'
   - User: 'resources/user.md'
+  - User SSH Keys: 'resources/user_ssh_keys.md'
   - Token: 'resources/token.md'
   - Services: 'resources/services.md'
   - Websocket: 'resources/websocket.md'

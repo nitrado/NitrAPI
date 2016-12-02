@@ -1,5 +1,12 @@
 # NITRAPI Changelogs
 
+###Changes from the 2nd of December 2016
+
+* **Documentation**
+    * *Added SSH Key Endpoint.*
+* **SSH Keys**
+    * *Added a endpoint to control your personal SSH public keys. The keys will be used for your Cloud Server Installation.*
+
 ###Changes from the 30th of November 2016
 
 * **Documentation**

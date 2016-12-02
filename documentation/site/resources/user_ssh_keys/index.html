@@ -8,7 +8,7 @@
   
   <meta name="author" content="marbis GmbH">
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Webinterface - Nitrapi Documentation</title>
+  <title>User SSH Keys - Nitrapi Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Webinterface";
-    var mkdocs_page_input_path = "resources/webinterface.md";
-    var mkdocs_page_url = "/resources/webinterface/";
+    var mkdocs_page_name = "User SSH Keys";
+    var mkdocs_page_input_path = "resources/user_ssh_keys.md";
+    var mkdocs_page_url = "/resources/user_ssh_keys/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -89,8 +89,24 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../user_ssh_keys/">User SSH Keys</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">User SSH Keys</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#get-userssh_keys">GET /user/ssh_keys</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-userssh_keys">POST /user/ssh_keys</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#post-userssh_keysid">POST /user/ssh_keys/:id</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#delete-userssh_keysid">DELETE /user/ssh_keys/:id</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -117,15 +133,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Webinterface</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#login">Login</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../webinterface/">Webinterface</a>
         
     </li>
 
@@ -395,7 +404,7 @@
         
       
     
-    <li>Webinterface</li>
+    <li>User SSH Keys</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -405,15 +414,77 @@
           <div role="main">
             <div class="section">
               
-                <p>The Nitrado Webinterface is now accessible via Nitrapi.</p>
-<h2 id="login">Login</h2>
-<p>To login into the Webinterface you need a special access token. You can request this token like described in the <a href="../../resources/user/">user resource</a> section.
-Each token has a lifetime of 24 hours.</p>
-<p>After you have received your access you can pass it to the Nitrado Webinterface. Just redirect the user to the following url:</p>
-<pre><code>https://webinterface.nitrado.net/?access_token=XXXXXXXXXXX&amp;language=deu&amp;service_id=XXXXXXXX
+                <h2 id="get-userssh_keys">GET /user/ssh_keys</h2>
+<p>This endpoint lists up all SSH public keys from your user. This Keys will be used for the Cloud Server Installation.</p>
+<p>Request:</p>
+<pre><code>GET /user/ssh_keys?access_token=&lt;access_token&gt;
 </code></pre>
 
-<p>You need to replace the 3 parameters access_token, language and service_id.</p>
+<p>Example Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;data&quot;:{  
+      &quot;keys&quot;:[  
+         {  
+            &quot;id&quot;:1,
+            &quot;type&quot;:&quot;ssh-rsa&quot;,
+            &quot;public_key&quot;:&quot;AAAAB3NzaC1yc2EAAAADAQABAAABAQDc4Sm93wXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;,
+            &quot;comment&quot;:&quot;My super secret public key... oh wait&quot;,
+            &quot;enabled&quot;:true
+         }
+      ]
+   }
+}
+</code></pre>
+
+<h2 id="post-userssh_keys">POST /user/ssh_keys</h2>
+<p>Adds a new SSH public key to your user account.</p>
+<p>Request:</p>
+<pre><code>POST /user/ssh_keys?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>POST Parameters:</p>
+<pre><code>key=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc4Sm93wXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX My super secret public key... oh wait
+enabled=true/false (optional, default is 1)
+</code></pre>
+
+<p>Example Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;message&quot;:&quot;The SSH Key has been added.&quot;
+}
+</code></pre>
+
+<h2 id="post-userssh_keysid">POST /user/ssh_keys/:id</h2>
+<p>Updates a SSH public key from your user account.</p>
+<p>Request:</p>
+<pre><code>POST /user/ssh_keys/&lt;id&gt;?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>POST Parameters:</p>
+<pre><code>key=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc4Sm93wXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX My super secret public key... oh wait (optional)
+enabled=true/false (optional)
+</code></pre>
+
+<p>Example Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;message&quot;:&quot;The SSH Key has been updated.&quot;
+}
+</code></pre>
+
+<h2 id="delete-userssh_keysid">DELETE /user/ssh_keys/:id</h2>
+<p>This endpoint deletes a specific SSH public key from your user account.</p>
+<p>Request:</p>
+<pre><code>DELETE /user/ssh_keys/&lt;id&gt;?access_token=&lt;access_token&gt;
+</code></pre>
+
+<p>Example Response:</p>
+<pre><code class="json">{  
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;message&quot;:&quot;The SSH Key has been deleted.&quot;
+}
+</code></pre>
               
             </div>
           </div>
@@ -421,10 +492,10 @@ Each token has a lifetime of 24 hours.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../gameserver/" class="btn btn-neutral float-right" title="Gameserver">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../token/" class="btn btn-neutral float-right" title="Token">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../websocket/" class="btn btn-neutral" title="Websocket"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../user/" class="btn btn-neutral" title="User"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -450,10 +521,10 @@ Each token has a lifetime of 24 hours.</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../websocket/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../user/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../gameserver/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../token/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
