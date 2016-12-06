@@ -30,6 +30,7 @@ pages:
 - Cloud Server Resources:
   - Global: 'resources/cloud_servers/global.md'
   - Power Events: 'resources/cloud_servers/power_events.md'
+  - Resources: 'resources/cloud_servers/resources.md'
   - Traffic: 'resources/cloud_servers/traffic.md'
 
 - Gameserver Resources:

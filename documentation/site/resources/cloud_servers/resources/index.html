@@ -8,7 +8,7 @@
   
   <meta name="author" content="marbis GmbH">
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>Bouncer - Nitrapi Documentation</title>
+  <title>Resources - Nitrapi Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Bouncer";
-    var mkdocs_page_input_path = "resources/order/bouncer.md";
-    var mkdocs_page_url = "/resources/order/bouncer/";
+    var mkdocs_page_name = "Resources";
+    var mkdocs_page_input_path = "resources/cloud_servers/resources.md";
+    var mkdocs_page_url = "/resources/cloud_servers/resources/";
   </script>
   
   <script src="../../../js/jquery-2.1.1.min.js"></script>
@@ -147,79 +147,63 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../information/">Information</a>
+        <a class="" href="../../order/information/">Information</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../payment/">Payment</a>
+        <a class="" href="../../order/payment/">Payment</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gameserver/">Gameserver</a>
+        <a class="" href="../../order/gameserver/">Gameserver</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../teamspeak3/">Teamspeak 3</a>
+        <a class="" href="../../order/teamspeak3/">Teamspeak 3</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../webspace/">Webspace</a>
+        <a class="" href="../../order/webspace/">Webspace</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../musicbot/">Musicbot</a>
+        <a class="" href="../../order/musicbot/">Musicbot</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../ventrilo/">Ventrilo</a>
+        <a class="" href="../../order/ventrilo/">Ventrilo</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../mumble/">Mumble</a>
+        <a class="" href="../../order/mumble/">Mumble</a>
         
     </li>
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Bouncer</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#pricing-information">Pricing Information</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#order-bouncer">Order Bouncer</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#extend-bouncer">Extend Bouncer</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#switch-bouncer">Switch Bouncer</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../../order/bouncer/">Bouncer</a>
         
     </li>
 
@@ -234,28 +218,35 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../cloud_servers/global/">Global</a>
+        <a class="" href="../global/">Global</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../cloud_servers/power_events/">Power Events</a>
+        <a class="" href="../power_events/">Power Events</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Resources</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#get-cloud_serversresources">GET /cloud_servers/resources</a></li>
+                
+            
+            </ul>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../cloud_servers/resources/">Resources</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../cloud_servers/traffic/">Traffic</a>
+        <a class="" href="../traffic/">Traffic</a>
         
     </li>
 
@@ -407,11 +398,11 @@
     
       
         
-          <li>Order Resources &raquo;</li>
+          <li>Cloud Server Resources &raquo;</li>
         
       
     
-    <li>Bouncer</li>
+    <li>Resources</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -421,185 +412,98 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="pricing-information">Pricing Information</h2>
-<p>Please take a look into the <a href="../../../resources/order/information/#pricing-structure-parts">parts pricing</a> system for more information how to calculate the price for this product.</p>
-<p><strong>Example:</strong></p>
-<p>If you want to order a Bouncer for 30 days with 8 instances you need to pay 1,60€.</p>
+                <h2 id="get-cloud_serversresources">GET /cloud_servers/resources</h2>
+<p>Returns the resource usage of a Cloud Server. You can choose between different time parameters.</p>
 <p>Request:</p>
-<pre><code>GET /order/pricing/bouncer?access_token=&lt;access_token&gt;
+<pre><code>GET /services/&lt;id&gt;/cloud_servers/resources?access_token=&lt;access_token&gt;
 </code></pre>
 
-<p>Parameters:</p>
-<pre><code>location=&lt;location_id&gt;
-sale_service=&lt;service_id&gt; (optional, service id of service which needs to be switched)
+<p>GET Parameters:</p>
+<pre><code>time=&lt;time parameter&gt;
 </code></pre>
 
+<p>Time Parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th align="right">Data Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1h</td>
+<td align="right">1 minute</td>
+</tr>
+<tr>
+<td>4h</td>
+<td align="right">5 minutes</td>
+</tr>
+<tr>
+<td>1d</td>
+<td align="right">30 minutes</td>
+</tr>
+<tr>
+<td>7d</td>
+<td align="right">120 minutes</td>
+</tr>
+</tbody>
+</table>
 <p>Example Response:</p>
-<pre><code>{  
+<pre><code class="json">{  
    &quot;status&quot;:&quot;success&quot;,
    &quot;data&quot;:{  
-      &quot;prices&quot;:{  
-         &quot;rental_times&quot;:[  
-            720,
-            2160,
-            8760
-         ],
-         &quot;parts&quot;:[  
-            {  
-               &quot;type&quot;:&quot;slot&quot;,
-               &quot;min_count&quot;:4,
-               &quot;max_count&quot;:256,
-               &quot;optional&quot;:false,
-               &quot;steps&quot;:[  
-                  4,
-                  8
-               ],
-               &quot;step_names&quot;:null,
-               &quot;rental_times&quot;:[  
-                  {  
-                     &quot;hours&quot;:720,
-                     &quot;prices&quot;:[  
-                        {  
-                           &quot;count&quot;:4,
-                           &quot;price&quot;:80
-                        },
-                        {  
-                           &quot;count&quot;:8,
-                           &quot;price&quot;:160
-                        }
-                     ]
-                  },
-                  {  
-                     &quot;hours&quot;:2160,
-                     &quot;prices&quot;:[  
-                        {  
-                           &quot;count&quot;:4,
-                           &quot;price&quot;:240
-                        },
-                        {  
-                           &quot;count&quot;:8,
-                           &quot;price&quot;:480
-                        }
-                     ]
-                  },
-                  {  
-                     &quot;hours&quot;:8760,
-                     &quot;prices&quot;:[  
-                        {  
-                           &quot;count&quot;:4,
-                           &quot;price&quot;:800
-                        },
-                        {  
-                           &quot;count&quot;:8,
-                           &quot;price&quot;:1600
-                        }
-                     ]
-                  }
-               ]
+      &quot;resources&quot;:[  
+         {  
+            &quot;type&quot;:&quot;disk_read_sda&quot;,
+            &quot;datapoints&quot;:{  
+               &quot;2016-12-06T08:15:10+00:00&quot;:0,
+               &quot;2016-12-06T08:20:10+00:00&quot;:0,
+               &quot;2016-12-06T08:25:10+00:00&quot;:0
             }
-         ]
-      }
-   }
-}
-</code></pre>
-
-<h2 id="order-bouncer">Order Bouncer</h2>
-<p>Request:</p>
-<pre><code>POST /order/order/bouncer?access_token=&lt;access_token&gt;
-</code></pre>
-
-<p>POST Parameters:</p>
-<pre><code>location=&lt;location_id&gt; (Location id from the location list)
-price=160 (Calculated price from the pricing call) 
-rental_time=720 (Rental time in hours)
-parts[slot]=8
-</code></pre>
-
-<p>Example Response:</p>
-<pre><code>{
-
-    &quot;status&quot;: &quot;success&quot;,
-    &quot;message&quot;: &quot;Order has been done with the price of €1.60.&quot;
-
-}
-</code></pre>
-
-<h2 id="extend-bouncer">Extend Bouncer</h2>
-<p><strong>Pricing list for service extension</strong></p>
-<p>Request:</p>
-<pre><code>GET /order/pricing/bouncer?access_token=&lt;access_token&gt;
-</code></pre>
-
-<p>Parameters:</p>
-<pre><code>method=extend
-service_id=1 (Service id of the service who needs to be extended)
-</code></pre>
-
-<p>Example Response:</p>
-<pre><code>{  
-   &quot;status&quot;:&quot;success&quot;,
-   &quot;data&quot;:{  
-      &quot;extend&quot;:{  
-         &quot;rental_times&quot;:[  
-            72,
-            720,
-            2160,
-            8760
-         ],
-         &quot;prices&quot;:{  
-            &quot;72&quot;:325,
-            &quot;720&quot;:1300,
-            &quot;2160&quot;:3500,
-            &quot;8760&quot;:13000
+         },
+         {  
+            &quot;type&quot;:&quot;disk_write_sda&quot;,
+            &quot;datapoints&quot;:{  
+               &quot;2016-12-06T08:15:10+00:00&quot;:0,
+               &quot;2016-12-06T08:20:10+00:00&quot;:3.19,
+               &quot;2016-12-06T08:25:10+00:00&quot;:3.2
+            }
+         },
+         {  
+            &quot;type&quot;:&quot;network_rx_fa:16:3e:cd:xx:xx&quot;,
+            &quot;datapoints&quot;:{  
+               &quot;2016-12-06T08:15:10+00:00&quot;:0,
+               &quot;2016-12-06T08:20:10+00:00&quot;:0,
+               &quot;2016-12-06T08:25:10+00:00&quot;:0
+            }
+         },
+         {  
+            &quot;type&quot;:&quot;network_tx_fa:16:3e:cd:xx:xx&quot;,
+            &quot;datapoints&quot;:{  
+               &quot;2016-12-06T08:15:10+00:00&quot;:0,
+               &quot;2016-12-06T08:20:10+00:00&quot;:0,
+               &quot;2016-12-06T08:25:10+00:00&quot;:0
+            }
+         },
+         {  
+            &quot;type&quot;:&quot;memory&quot;,
+            &quot;datapoints&quot;:{  
+               &quot;2016-12-06T08:15:10+00:00&quot;:794.99,
+               &quot;2016-12-06T08:20:10+00:00&quot;:794.99,
+               &quot;2016-12-06T08:25:10+00:00&quot;:794.99
+            }
+         },
+         {  
+            &quot;type&quot;:&quot;cpu&quot;,
+            &quot;datapoints&quot;:{  
+               &quot;2016-12-06T08:15:10+00:00&quot;:0,
+               &quot;2016-12-06T08:20:10+00:00&quot;:1,
+               &quot;2016-12-06T08:25:10+00:00&quot;:1
+            }
          }
-      }
+      ]
    }
-}
-</code></pre>
-
-<p><strong>Process service extension</strong></p>
-<p>Request:</p>
-<pre><code>POST /order/order/bouncer?access_token=&lt;access_token&gt;
-</code></pre>
-
-<p>POST Parameters:</p>
-<pre><code>price=160 (Calculated price from the pricing call) 
-rental_time=720 (Extension time in hours)
-method=extend
-service_id=1 (Service id of the service who needs to be extended)
-</code></pre>
-
-<p>Example Response:</p>
-<pre><code>{
-
-    &quot;status&quot;: &quot;success&quot;,
-    &quot;message&quot;: &quot;Order has been done with the price of €1.60.&quot;
-
-}
-</code></pre>
-
-<h2 id="switch-bouncer">Switch Bouncer</h2>
-<p>If you switch a old service you need to provide the correct price, please check the pricing list with sale_service parameter.</p>
-<p><strong>Important:</strong> If the sale price is higher then the price of the new service, the difference will be added to your account as credit.</p>
-<p>Request:</p>
-<pre><code>POST /order/order/bouncer?access_token=&lt;access_token&gt;
-</code></pre>
-
-<p>POST Parameters:</p>
-<pre><code>location=&lt;location_id&gt; (Location id from the location list)
-price=-80 (Calculated price from the pricing call) 
-rental_time=720 (Rental time in hours)
-parts[slot]=8
-method=switch
-service_id=1 (Service id of the service who needs to switched.)
-</code></pre>
-
-<p>Example Response:</p>
-<pre><code>{
-
-    &quot;status&quot;: &quot;success&quot;,
-    &quot;message&quot;: &quot;Order has been done with the price of -0.80€.&quot;
-
 }
 </code></pre>
               
@@ -609,10 +513,10 @@ service_id=1 (Service id of the service who needs to switched.)
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../cloud_servers/global/" class="btn btn-neutral float-right" title="Global">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../traffic/" class="btn btn-neutral float-right" title="Traffic">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../mumble/" class="btn btn-neutral" title="Mumble"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../power_events/" class="btn btn-neutral" title="Power Events"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -638,10 +542,10 @@ service_id=1 (Service id of the service who needs to switched.)
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../mumble/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../power_events/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../cloud_servers/global/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../traffic/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
