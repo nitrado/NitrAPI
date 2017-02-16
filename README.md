@@ -1,6 +1,6 @@
 # NITRAPI Documentation
 
-The documentation can be found under [https://nitrado.github.io/Nitrapi/](http://nitrado.github.io/Nitrapi/).
+The documentation can be found under [https://doc.nitrado.net](https://doc.nitrado.net).
 
 All Changelogs can be found [here](https://github.com/nitrado/Nitrapi/blob/master/CHANGELOG.md).
 
