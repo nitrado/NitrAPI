@@ -10,10 +10,10 @@ All Changelogs can be found [here](https://github.com/nitrado/Nitrapi/blob/maste
 
 These are our official and maintained Software Development Kits.
 
-* PHP SDK (https://github.com/nitrado/Nitrapi-PHP)
-* Java SDK (https://github.com/nitrado/Nitrapi-Java)
-* Swift SDK (https://github.com/nitrado/Nitrapi-Swift)
-* Javascript SDK (https://github.com/nitrado/Nitrapi-Javascript)
+* PHP SDK (https://github.com/nitrado/NitrAPI-PHP)
+* Java SDK (https://github.com/nitrado/NitrAPI-Java)
+* Swift SDK (https://github.com/nitrado/NitrAPI-Swift)
+* Javascript SDK (https://github.com/nitrado/NitrAPI-Javascript)
 
 ### 3rd Party SDKs
 
