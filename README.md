@@ -13,7 +13,6 @@ These are our official and maintained Software Development Kits.
 * PHP SDK (https://github.com/nitrado/NitrAPI-PHP)
 * Java SDK (https://github.com/nitrado/NitrAPI-Java)
 * Swift SDK (https://github.com/nitrado/NitrAPI-Swift)
-* Javascript SDK (https://github.com/nitrado/NitrAPI-Javascript)
 
 ### 3rd Party SDKs
 
