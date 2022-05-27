@@ -17,6 +17,7 @@ These are our official and maintained Software Development Kits.
 ### 3rd Party SDKs
 
 * Node.js SDK (https://github.com/codingnavi/Nitrapi-Node)
+* PHP oAuth2 Provider (https://github.com/ItsMeStevieG/oauth2-nitrado)
 * Nitrado.js (https://github.com/cainthebest/nitrado.js)
 
 Feel free to create more. :)
