@@ -1,8 +1,8 @@
-# NITRAPI Documentation
+# NitrAPI Documentation
 
 The documentation can be found under [https://doc.nitrado.net](https://doc.nitrado.net).
 
-All Changelogs can be found [here](https://github.com/nitrado/Nitrapi/blob/master/CHANGELOG.md).
+All changelogs can be found [here](https://github.com/nitrado/Nitrapi/blob/master/CHANGELOG.md).
 
 ## Software Development Kits
 
@@ -20,7 +20,7 @@ These are our official and maintained Software Development Kits.
 * PHP oAuth2 Provider (https://github.com/ItsMeStevieG/oauth2-nitrado)
 * Nitrado.js (https://github.com/cainthebest/nitrado.js)
 
-Feel free to create more. :)
+Feel free to create more. 😄 Check out our [developer landing page](https://developers.nitrado.net)!
 
 ## Contributing
 
@@ -28,4 +28,4 @@ If you like to contribute, just raise a Github Pull Request.
 
 ## Bug Reports
 
-If you really found a bug, please let us know [here](https://github.com/nitrado/Nitrapi/issues). But it's probably more like a feature then a bug. ;-)
+If you really found a bug, please let us know [here](https://github.com/nitrado/Nitrapi/issues). But it's probably more like a feature than a bug. 😉
