@@ -89,8 +89,6 @@ Software development kits are available for NitrAPI. They can be used to integra
 - [NitrAPI SDK for Swift](https://github.com/nitrado/NitrAPI-Swift)
 - [NitrAPI SDK for Java](https://github.com/nitrado/NitrAPI-Java)
 
-<br />
-
 ### Community created SDKs
 
 #### Node.js
@@ -101,8 +99,6 @@ Software development kits are available for NitrAPI. They can be used to integra
 #### PHP
 
 - [oAuth2 Provider](https://github.com/ItsMeStevieG/oauth2-nitrado)
-
-<br />
 
 ## Contributing
 
