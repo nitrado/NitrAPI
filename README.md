@@ -14,7 +14,7 @@
   <p align="center">
     NitrAPI is a RESTful API for Nitrado
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://doc.nitrado.net/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://server.nitrado.net">Website</a>
@@ -46,3 +46,4 @@ Since it's also possible to use features of voice servers like TeamSpeak and Mum
 #### Management via 3rd Party Software
 
 NitrAPI can be used to manage servers and services through 3rd party software. In recent years it has been more common to use the NitrAPI with the Discord API to achieve management of Nitrado servers within the Discord client. There are already many examples of this throughout the gaming community where anything from a simple killfeed to full-fledged management tools that can be used for moderation and server controls can be achieved. This is a great and initiative way to manage Nitrado servers, and it's also a great way to manage other services that Nitrado provides.
+
