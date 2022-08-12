@@ -35,8 +35,6 @@ Because Nitrado grants free access to the NitrAPI to everyone, hobbyists and pro
 
 ### Usage Examples
 
-<br />
-
 #### Modding
 
 Since the NitrAPI can be used with almost any programming language, it can also be used within almost any game modification. For instance, many communities use a game server as well as accompanying voice server and maybe uninvited guests aren't wanted on either of them. In this case, the game server, as well as the voice server, have to be protected separately.
@@ -48,4 +46,3 @@ Since it's also possible to use features of voice servers like TeamSpeak and Mum
 #### Management via 3rd Party Software
 
 NitrAPI can be used to manage servers and services through 3rd party software. In recent years it has been more common to use the NitrAPI with the Discord API to achieve management of Nitrado servers within the Discord client. There are already many examples of this throughout the gaming community where anything from a simple killfeed to full-fledged management tools that can be used for moderation and server controls can be achieved. This is a great and initiative way to manage Nitrado servers, and it's also a great way to manage other services that Nitrado provides.
-
